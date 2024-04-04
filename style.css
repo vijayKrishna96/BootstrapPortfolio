@@ -1,0 +1,92 @@
+.navbar-nav .nav-link{
+    color:#000000;
+    font-size: 1.1rem;
+}
+#hero{
+    width: 100%;
+    background: url(./images/small-leaflets-white-table.jpg);
+    background-position: centre;
+    background-size: cover;
+    height: 99vh;
+}
+section:not(:first-of-type){
+    text-align: center;
+}
+section.hero{
+    padding-top: 300px;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+/* Services */
+
+section.services i{
+    font-size:2rem;
+    margin: 1rem auto 0;
+    border: 2px solid #000000;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .card{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+    max-width: 22rem;
+    margin-inline: auto;
+}
+section:nth-child(2n){
+    background-color: #ecf2ff;
+}
+section.projects .card{
+    max-width: 17rem;
+    text-align: left;
+}
+section.projects .card img{
+    max-width: 70%;
+}
+
+/* Testimonials */
+section.test
+.carousel-control-prev,
+.carousel-control-next{
+    width: 10%;
+}
+section.test .carousel-item p{
+    max-width: 80%;
+}
+section.test .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.test .carousel.carousel-fade .carousel-item{
+    transition: opacity 0.5s;
+}
+
+@media screen and (min-width:1024px) {
+    .navbar-nav .nav-item{
+        padding: 0 1rem;
+    }
+    section.about .container,
+    section.test .container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:576px) {
+   .hero{
+        text-align: center;
+        margin: 1rem auto;
+    }
+    #hero{
+        width: 100%;
+        background: url(./images/2nd.jpg);
+        background-position: top;
+        background-size: cover;
+        height: 99vh;
+    }
+} 
